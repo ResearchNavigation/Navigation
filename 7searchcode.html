@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python及Pytorch框架 - 科研导航</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="科研导航">
+            <a href="index.html">科研导航</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">开始</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>导航</h3>
+            <ul>
+                <li><a href="1python.html">Python及Pytorch框架</a></li>
+                <li><a href="2deepl.html">深度学习基础</a></li>
+                <li><a href="3meeting.html">会议期刊区别</a></li>
+                <li><a href="4survey.html">方向调研</a></li>
+                <li><a href="5readpaper.html">找论文技巧</a></li>
+                <li><a href="6searchpaper.html">看论文技巧</a></li>
+                <li><a href="7searchcode.html">代码技巧</a></li>
+                <li><a href="8idea.html">idea流程</a></li>
+                <li><a href="9timeline.html">进度安排</a></li>
+                <li><a href="10submitpaper.html">投稿技巧</a></li>
+                <!-- 其他导航项 -->
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>代码技巧</h2>
+            <section>
+                <p>
+<strong>找代码技巧：</strong>
+
+<br>1、	论文有链接：
+<br>自带github链接，点击进入。
+<br>2、	论文无链接：
+<br>依据论文名字、模型的简称/缩写，去github搜一下。
+<br>Paperwithcode网站搜。
+<br>搜不到就是没有了。
+
+<br><br><strong>看代码技巧：</strong>
+<br>Github上找到代码，按照readme文件跑通。
+<br>首先重点关注model文件和loss如何设计。将代码对应论文中模型描述、伪代码、模型图，看模型是怎么搭建的。Init()对应模型包括什么层 ，forward()对应层搭建成模型。
+
+<br>入门做模型的话，基本上都是在别人的代码框架上去改，不建议自己从头搭建复杂模型。所以，我们看论文、跑代码的时候，要有意识地积累一下哪些代码项目好用，积累一些，方便后续在别人的基础上去改，然后形成自己的东西。
+
+
+
+<br><br><strong>改代码技巧：</strong>
+<br>基本原则：维度匹配
+<br>基于模型类似于搭积木的原理，为了保证积木可以拼插起来，前提是形状匹配。模型也是类似原理，保证tensor数据维度-数据形状匹配即可。
+<br>首先，明确模型各个层的数据维度。
+<br>其次，保证前一模块的数据输出，要对应好后一模块的数据输入维度。如前一模块输出维度（batchsize ，seq_len，dim）,后一模块输入维度（batchsize ，dim，seq_len），则无法直接连接模型，需要做数据形状上的调整，交换后两个维度。
+
+                    <br><br><br><em>注意：</em>
+                    <ul>
+                        <li>看论文过程中一定要跑代码！</li>
+                     
+                    </ul>
+                </p>
+            </section>
+            <div class="navigation-buttons">
+                <a href="6searchpaper.html" class="nav-button">前一页</a>
+                <a href="8idea.html" class="nav-button">后一页</a>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业选择 - 科研导航</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="科研导航">
+            <a href="index.html">科研导航</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">开始</a></li>
+                <li><a href="help.html">帮助</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="major-main">
+        <h2>请选择你的专业：</h2>
+        <div class="major-options">
+            <button onclick="navigateToPage('topics.html')" class="major-button selected">计算机专业</button>
+            <button onclick="navigateToPage('topics_other.html')" class="major-button selected">其他专业 待开发</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
